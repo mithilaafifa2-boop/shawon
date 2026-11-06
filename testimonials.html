@@ -1,0 +1,699 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Read client reviews and testimonials about Shawon's services and professional work.">
+
+    <meta name="theme-color" content="#020712">
+
+    <title>Testimonials | Shawon Ahammed</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+
+    <!-- Testimonials Page CSS -->
+    <style>
+
+        body {
+            background: #020712;
+            color: #eaf7ff;
+        }
+
+        /* Review Section */
+
+        .review-section {
+            padding: 70px 0;
+            background: #0b1626;
+        }
+
+        .review-section h1 {
+            color: #00d9ff;
+            font-size: 38px;
+            font-weight: 700;
+            text-shadow: 0 0 15px rgba(0, 217, 255, .4);
+            margin-bottom: 12px;
+        }
+
+        .review-section .rating {
+            color: #ffc107;
+            font-size: 23px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            margin-bottom: 40px;
+            text-shadow: 0 0 12px rgba(255, 193, 7, .3);
+        }
+
+        /* Review Grid */
+
+        .review-grid {
+            margin-bottom: 25px;
+        }
+
+        .review-section .review-card {
+            height: 100%;
+            background: #111a2e;
+            border: 1px solid rgba(0, 217, 255, .18);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: .3s ease;
+        }
+
+        .review-section .review-card:hover {
+            transform: translateY(-6px);
+            border-color: #00d9ff;
+            box-shadow: 0 10px 30px rgba(0, 217, 255, .15);
+        }
+
+        .review-section .review-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+            border-radius: 0;
+            box-shadow: none;
+            background: #ffffff;
+        }
+
+        /* Review Bottom Text */
+
+        .review-heading {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        .review-description {
+            color: #b8c2d1;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        /* Quality Section */
+
+        .service-quality {
+            max-width: 800px;
+            margin: 70px auto;
+            padding: 40px 30px;
+            background: #111820;
+            border: 1px solid #00bfff;
+            border-radius: 20px;
+            box-shadow: 0 0 25px rgba(0, 191, 255, .15);
+        }
+
+        .service-quality h2 {
+            color: #00d9ff;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-shadow: 0 0 12px rgba(0, 217, 255, .3);
+        }
+
+        .quality-item {
+            margin-bottom: 28px;
+        }
+
+        .quality-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .quality-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            color: #ffffff;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .quality-title span:last-child {
+            color: #00d9ff;
+            font-family: monospace;
+        }
+
+        .quality-bar {
+            width: 100%;
+            height: 12px;
+            background: #263247;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .quality-bar .fill {
+            height: 100%;
+            border-radius: 20px;
+            transition: width 1.5s ease;
+        }
+
+        .quality-bar .delivery {
+            width: 95%;
+            background: linear-gradient(90deg, #00ff99, #198754);
+        }
+
+        .quality-bar .quality {
+            width: 98%;
+            background: linear-gradient(90deg, #00c6ff, #0d6efd);
+        }
+
+        .quality-bar .security {
+            width: 95%;
+            background: linear-gradient(90deg, #00ffcc, #20c997);
+        }
+
+        .quality-bar .action {
+            width: 92%;
+            background: linear-gradient(90deg, #ffe066, #ffc107);
+        }
+
+        .quality-bar .response {
+            width: 90%;
+            background: linear-gradient(90deg, #ff758c, #dc3545);
+        }
+
+        /* Mobile Responsive */
+
+        @media (max-width: 991px) {
+
+            .navbar-collapse {
+                background: #050b14;
+                padding: 15px;
+                margin-top: 10px;
+                border-radius: 10px;
+            }
+
+            .navbar-nav {
+                align-items: flex-start;
+            }
+
+            .nav-link {
+                margin-left: 0;
+                padding: 10px;
+            }
+
+        }
+
+        @media (max-width: 576px) {
+
+            .review-section {
+                padding: 45px 12px;
+            }
+
+            .review-section h1 {
+                font-size: 28px;
+            }
+
+            .review-section .rating {
+                font-size: 19px;
+                margin-bottom: 30px;
+            }
+
+            .review-section .review-card {
+                border-radius: 12px;
+            }
+
+            .service-quality {
+                margin: 40px 12px;
+                padding: 28px 18px;
+            }
+
+            .service-quality h2 {
+                font-size: 23px;
+                margin-bottom: 30px;
+            }
+
+            .quality-title {
+                font-size: 14px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- Navbar Start -->
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark my-custom-nav">
+
+            <div class="container">
+
+                <a class="navbar-brand" href="home.html">
+
+                    <img
+                        src="image/1000116055.jpg"
+                        alt="Shawon Logo">
+
+                </a>
+
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
+
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">
+                                About
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">
+                                Services
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                href="testimonials.html"
+                                aria-current="page">
+
+                                Testimonials
+
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+    <!-- Navbar End -->
+
+
+    <!-- Reviews Section Start -->
+    <section class="review-section">
+
+        <div class="container">
+
+            <h1 class="text-center">
+                Clients' Reviews
+            </h1>
+
+            <p class="rating text-center">
+                ★★★★★ (5.0)
+            </p>
+
+
+            <!-- Reviews Row 1 -->
+            <div class="row row-cols-1 row-cols-md-2 g-4 review-grid">
+
+                <!-- Review 2 -->
+                <div class="col">
+
+                    <div class="review-card">
+
+                        <img
+                            src="image/review-2.jpeg"
+                            alt="Client review 2"
+                            loading="lazy">
+
+                    </div>
+
+                </div>
+
+
+                <!-- Review 3 -->
+                <div class="col">
+
+                    <div class="review-card">
+
+                        <img
+                            src="image/review-3.jpeg"
+                            alt="Client review 3"
+                            loading="lazy">
+
+                    </div>
+
+                </div>
+
+
+                <!-- Review 4 -->
+                <div class="col">
+
+                    <div class="review-card">
+
+                        <img
+                            src="image/review-4.jpeg"
+                            alt="Client review 4"
+                            loading="lazy">
+
+                    </div>
+
+                </div>
+
+
+                <!-- Review 5 -->
+                <div class="col">
+
+                    <div class="review-card">
+
+                        <img
+                            src="image/review-5.jpeg"
+                            alt="Client review 5"
+                            loading="lazy">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Reviews Row 2 -->
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+
+                <!-- Review 6 -->
+                <div class="col">
+
+                    <div class="review-card">
+
+                        <img
+                            src="image/review-6.jpeg"
+                            alt="Client review 6"
+                            loading="lazy">
+
+                    </div>
+
+                </div>
+
+
+                <!-- Review 7 -->
+                <div class="col">
+
+                    <div class="review-card">
+
+                        <img
+                            src="image/review-7.jpeg"
+                            alt="Client review 7"
+                            loading="lazy">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <h3 class="review-heading">
+                Thank You for Trusting My Services
+            </h3>
+
+            <p class="review-description">
+                Your feedback motivates me to improve my work every day.
+            </p>
+
+        </div>
+
+    </section>
+    <!-- Reviews Section End -->
+
+
+    <!-- Service Quality Section Start -->
+    <section class="service-quality">
+
+        <h2>
+            WHY CLIENTS TRUST ME
+        </h2>
+
+
+        <!-- Timely Delivery -->
+        <div class="quality-item">
+
+            <div class="quality-title">
+
+                <span>⏱ Timely Delivery</span>
+
+                <span>95%</span>
+
+            </div>
+
+            <div
+                class="quality-bar"
+                role="progressbar"
+                aria-label="Timely Delivery"
+                aria-valuenow="95"
+                aria-valuemin="0"
+                aria-valuemax="100">
+
+                <div class="fill delivery"></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Quality Work -->
+        <div class="quality-item">
+
+            <div class="quality-title">
+
+                <span>✔ Quality Work</span>
+
+                <span>98%</span>
+
+            </div>
+
+            <div
+                class="quality-bar"
+                role="progressbar"
+                aria-label="Quality Work"
+                aria-valuenow="98"
+                aria-valuemin="0"
+                aria-valuemax="100">
+
+                <div class="fill quality"></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Security Assurance -->
+        <div class="quality-item">
+
+            <div class="quality-title">
+
+                <span>🔐 Security Assurance</span>
+
+                <span>95%</span>
+
+            </div>
+
+            <div
+                class="quality-bar"
+                role="progressbar"
+                aria-label="Security Assurance"
+                aria-valuenow="95"
+                aria-valuemin="0"
+                aria-valuemax="100">
+
+                <div class="fill security"></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Quick Action -->
+        <div class="quality-item">
+
+            <div class="quality-title">
+
+                <span>⚡ Quick Action</span>
+
+                <span>92%</span>
+
+            </div>
+
+            <div
+                class="quality-bar"
+                role="progressbar"
+                aria-label="Quick Action"
+                aria-valuenow="92"
+                aria-valuemin="0"
+                aria-valuemax="100">
+
+                <div class="fill action"></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Response -->
+        <div class="quality-item">
+
+            <div class="quality-title">
+
+                <span>
+                    <i class="fa-solid fa-phone"></i>
+                    24/7 Response
+                </span>
+
+                <span>90%</span>
+
+            </div>
+
+            <div
+                class="quality-bar"
+                role="progressbar"
+                aria-label="24/7 Response"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100">
+
+                <div class="fill response"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Service Quality Section End -->
+
+
+    <!-- Footer Start -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <h2>
+                SHAWON<span>.</span>
+            </h2>
+
+            <p class="role">
+                Cybersecurity Researcher | Ethical Hacker
+            </p>
+
+            <div class="live-status">
+
+                <p>
+                    🟢 System Status: Online
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    Date: <span id="date"></span>
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-clock"></i>
+                    Time: <span id="time"></span>
+                </p>
+
+            </div>
+
+            <p class="copyright">
+                © <span id="year"></span> Shawon. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+    <!-- Footer End -->
+
+
+    <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous">
+    </script>
+
+    <!-- Custom JavaScript -->
+    <script src="custom.js"></script>
+
+
+    <!-- Date, Time and Year -->
+    <script>
+
+        function updateDateTime() {
+
+            const now = new Date();
+
+            const dateElement = document.getElementById("date");
+            const timeElement = document.getElementById("time");
+            const yearElement = document.getElementById("year");
+
+            if (dateElement) {
+                dateElement.textContent = now.toLocaleDateString();
+            }
+
+            if (timeElement) {
+                timeElement.textContent = now.toLocaleTimeString();
+            }
+
+            if (yearElement) {
+                yearElement.textContent = now.getFullYear();
+            }
+
+        }
+
+        updateDateTime();
+
+        setInterval(updateDateTime, 1000);
+
+    </script>
+
+</body>
+
+</html>
+
+
